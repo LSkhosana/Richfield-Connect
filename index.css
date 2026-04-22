@@ -1,0 +1,96 @@
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #00008e;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
+        .links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .links a:hover {
+            color: #b3b3b3;
+        }
+        
+        nav button {
+            background-color: #ff1c1c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .logo img {
+            width: 200px;
+        }
+
+        .container {
+            padding: 10px 50px;
+            margin: 0 auto;
+        }
+
+        /* HAMBURGER */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .mobile-menu{
+                display: none;
+        }
+        /* MOBILE */
+        @media (max-width: 700px) {
+            .links,
+            nav button {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .mobile-menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #00008e;
+                margin-top: 20px;
+                border: none;
+                border-radius: 5px;
+            }
+
+            .mobile-menu a {
+                margin: 10px 0;
+                display: block;
+            }
+
+            .mobile-menu button {
+                margin-top: 10px;
+            }
+
+            .mobile-menu.active {
+                display: flex;
+            }
+        }
