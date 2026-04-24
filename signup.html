@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Richfield Connect</title>
+    <title>Sign Up</title>
 </head>
 
 <body>
@@ -37,17 +37,63 @@
 
             </div>
         </nav>
+        
+        <div class="signup">
+       <form >
+            <h1>Sign Up</h1>
+            <div class="form">
+                <input type="text" id="fullName" placeholder="Full Name" >
+                <small class="error" id="nameError"></small>
+                <input type="text" id="studentNumber" placeholder="Student Number" >
+                <small class="error" id="studentError"></small>
 
-       
+            </div>
+            <select id="campus">
+                <option value="Sandton">Distance Learning</option>
+                <option value="Midrand">Pretoria</option>
+                <option value="Randburg">Centurion</option>
+                <option value="Roodepoort">Durban</option>
+            </select>
+            <div class="form">
+                <input type="email" id="email" placeholder="Email" >
+                <small class="error" id="emailError"></small>
 
+                <input type="password" id="password" placeholder="Password" >
+                <small class="error" id="passwordError"></small>
 
-        <footer>
-            
+            </div>
+            <div class="interest-options"></div>
+            <textarea id="bio" placeholder="Tell us about yourself..."></textarea>
+            <small class="error" id="bioError"></small>
+
+            <button type="submit">Sign Up</button>
+       </form>
+
+       <div class="preview">
+            <h2 id="previewName">Your Name</h2>
+            <p id="previewBio">Your bio will appear here...</p>
+            <div id="previewInterests"></div>
+        </div>
+        </div>  
+
+       <footer>
+            <div class="foot">
+                <img src="./richfield-logo.svg" alt="richfield logo">
+                <div class="link">
+                    <p>Links</p>
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/profile.html">Profile</a>
+                    <a href="/feed.html">Feed</a>
+                </div>
+            </div>
         </footer>
 
 
     </div>
-
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
+   
 </body>
 </html>

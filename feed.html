@@ -38,9 +38,36 @@
             </div>
         </nav>
 
+       
+        <div class="feed">
+            <div class="preview-posts">
+                <div id="postsContainer"></div>
+            </div>
+
+            <div class="posts">
+                <input type="text" id="postContent" placeholder="What's on your mind?">
+                <small class="error" id="postError"></small>
+                <button id="postButton" type="button">Post</button>
+            </div>
+        </div>
+    
+
+         <footer>
+            <div class="foot">
+                <img src="./richfield-logo.svg" alt="richfield logo">
+                <div class="link">
+                    <p>Links</p>
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/profile.html">Profile</a>
+                    <a href="/feed.html">Feed</a>
+                </div>
+            </div>
+        </footer>
 
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
+    <script src="feed.js"></script>
 </body>
 </html>

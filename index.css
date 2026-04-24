@@ -1,33 +1,117 @@
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #00008e;
-            border-radius: 5px;
-            position: relative;
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00008e;
+    border-radius: 5px;
+    position: relative;
+}
 
-        nav a {
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+        
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a:hover {
+    color: #b3b3b3;
+}
+        
+nav button {
+    background-color: #ff1c1c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.container {
+    padding: 10px 50px;
+    margin: 0 auto;
+    height: 100vh;
+
+}
+
+/* HAMBURGER */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+section {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.home{
+    background-image:linear-gradient(rgba(17, 17, 17, 0.5), rgba(28, 28, 28, 0.5)), url('/pexels-oacthecreator-10604068.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.about{
+    background-image:linear-gradient(rgba(17, 17, 17, 0.5), rgba(28, 28, 28, 0.5)), url('pexels-zandatsu-32213218.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.content{
+    padding: 20px;
+}
+
+.content h1 span{
+        color: white;
+        font-size: 64px;
+        margin-bottom: 10px;
+        font-weight: 100;
+    }
+    .content h1 {
+        color: white;
+        font-size: 64px;
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+
+        .content p {
+            color: white;
+            font-size: 18px;
+            line-height: 1.5;
+            max-width: 800px;
+        }
+    
+        .content-btns {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .content-btns a {
             text-decoration: none;
-            color: #ffffff;
+            color: white;
         }
-        
-        .links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .links a:hover {
-            color: #b3b3b3;
-        }
-        
-        nav button {
+        #btn-1 {
             background-color: #ff1c1c;
             color: white;
             border: none;
@@ -35,28 +119,318 @@
             cursor: pointer;
             border-radius: 5px;
             font-size: 14px;
+            margin-right: 10px;
         }
-
-        .logo img {
-            width: 200px;
-        }
-
-        .container {
-            padding: 10px 50px;
-            margin: 0 auto;
-        }
-
-        /* HAMBURGER */
-        .menu-toggle {
-            display: none;
-            font-size: 24px;
+        
+         #btn-2 {
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid white;
             color: white;
+            padding: 10px 20px;
             cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 10px;
         }
 
-        .mobile-menu{
-                display: none;
-        }
+
+footer {
+    background-color: #00008e;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.foot {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .link a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin-top: 5px;
+    }
+
+     .link p {
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
+    .foot img {
+        width: 120px;
+        height: 20px;
+    }
+
+
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.input-error {
+  border: 2px solid red;
+}
+
+.tag {
+  display: inline-block;
+  background: #00008e;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.interest-options button.active {
+  background-color: #ff1c1c;
+  color: white;
+}
+
+.profile {
+    padding: 20px;
+
+}
+
+.signup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 12px;
+    width: 100%;
+}
+
+form h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #00008e;
+    margin-bottom: 4px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #111;
+    background: #fff;
+}
+.form{
+    display: flex;
+    gap: 12px;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #00008e;
+    box-shadow: 0 0 0 2px rgba(0, 0, 142, 0.15);
+}
+
+textarea {
+    min-height: 90px;
+}
+
+.interest-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.interest-options button {
+    padding: 6px 14px;
+    border: 1px solid #00008e;
+    border-radius: 15px;
+    background: #fff;
+    color: #00008e;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.interest-options button.active {
+    background: #ff1c1c;
+    border-color: #ff1c1c;
+    color: #fff;
+}
+
+form button[type="submit"] {
+    background: #ff1c1c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+form button[type="submit"]:hover {
+    background: #d41616;
+}
+
+.preview {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.preview h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00008e;
+}
+
+.preview p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+#previewInterests {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    gap: 8px;
+}
+
+.posts input {
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.posts input:focus {
+    outline: none;
+    border-color: #00008e;
+    box-shadow: 0 0 0 2px rgba(0, 0, 142, 0.15);
+}
+
+.posts button {
+    background: #ff1c1c;
+    color: #fff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.posts button:hover {
+    background: #d41616;
+}
+
+.preview-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-top: 15px;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.post-meta strong {
+    font-size: 14px;
+    color: #00008e;
+    font-weight: 700;
+}
+
+.post-meta span {
+    font-size: 12px;
+    color: #999;
+}
+
+.post > p {
+    font-size: 14px;
+    color: #222;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.likeButton {
+    background: #fff;
+    border: 1px solid #00008e;
+    color: #00008e;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.likeButton:hover {
+    background: #00008e;
+    color: #fff;
+}
+
+.deleteButton {
+    background: #fff;
+    border: 1px solid #ff1c1c;
+    color: #ff1c1c;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background: #ff1c1c;
+    color: #fff;
+}
         /* MOBILE */
         @media (max-width: 700px) {
             .links,
@@ -93,4 +467,42 @@
             .mobile-menu.active {
                 display: flex;
             }
+            .signup{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            
+           
+
+        }
+        }
+
+
+        @media (max-width: 500px) {
+            .container{
+                padding: 10px 20px;
+            }
+            .logo img {
+                width: 130px;
+            }
+            .content h1 span{
+        color: white;
+        font-size: 44px;
+        margin-bottom: 10px;
+        font-weight: 100;
+    }
+    .content h1 {
+       
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: 800;
+    }
+
+        .content p {
+            color: white;
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 800px;
+        }
+    
         }
